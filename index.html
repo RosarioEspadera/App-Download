@@ -1,63 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Download Flashcards App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download Electronics Flashcard App</title>
   <style>
     body {
-      font-family: system-ui, sans-serif;
-      background: #fdf6e3;
-      color: #222;
+      font-family: Arial, sans-serif;
+      background: #fdfdfd;
+      color: #333;
       margin: 0;
+      padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
     }
     .container {
-      max-width: 500px;
-      background: #fff;
-      padding: 30px;
-      border-radius: 14px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
       text-align: center;
-    }
-    .app-icon {
-      width: 100px;
-      height: 100px;
-      margin-bottom: 20px;
+      max-width: 600px;
+      padding: 20px;
     }
     h1 {
-      margin: 10px 0;
-      font-size: 1.6rem;
+      color: #007acc;
     }
-    p {
-      font-size: 1rem;
-      margin-bottom: 20px;
-    }
-    a.download-btn {
+    .download-btn {
       display: inline-block;
-      padding: 14px 20px;
-      background: #268bd2;
+      padding: 12px 20px;
+      margin: 15px 10px;
+      background: #007acc;
       color: #fff;
-      font-size: 1.1rem;
-      font-weight: bold;
+      border-radius: 6px;
       text-decoration: none;
-      border-radius: 10px;
-      transition: background 0.25s;
+      font-weight: bold;
+      transition: background 0.2s;
     }
-    a.download-btn:hover {
-      background: #1d6fa5;
+    .download-btn:hover {
+      background: #005c99;
+    }
+    .note {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #555;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="app-icon.png" alt="App Icon" class="app-icon">
-    <h1>Electronics Flashcard App</h1>
-    <p>Download the latest version of the Electronics Flashcard Android app below:</p>
-    <a href="downloads/app-release.apk" class="download-btn" download>⬇ Download APK</a>
+    <h1>Download Electronics Flashcard App</h1>
+    <p>Get the latest version of the app below:</p>
+
+    <!-- Latest Release Download -->
+    <a href="https://github.com/RosarioEspadera/App-Download/releases/latest/download/app-release.apk" class="download-btn">⬇ Download Latest APK</a>
+
+    <p class="note">If the download doesn’t start, right-click and choose <b>Save link as...</b></p>
   </div>
 </body>
 </html>
