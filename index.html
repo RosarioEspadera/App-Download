@@ -2,58 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Download Electronics Flashcard App</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #fdfdfd;
-      color: #333;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+      font-family: system-ui, sans-serif;
+      background: linear-gradient(135deg,#e0f7ff,#fff);
+      color:#333;
+      margin:0; padding:20px;
+      display:flex; justify-content:center; align-items:flex-start;
+      min-height:100vh;
     }
-    .container {
-      text-align: center;
-      max-width: 600px;
-      padding: 20px;
+    .card {
+      background:#fff; border-radius:14px; box-shadow:0 4px 12px rgba(0,0,0,.1);
+      max-width:600px; width:100%; padding:30px; text-align:center;
     }
-    h1 {
-      color: #007acc;
-    }
+    h1 {color:#007acc; font-size:1.6rem; margin:0 0 10px;}
+    h2 {color:#005c99; margin:25px 0 12px;}
+    p {margin:0 0 20px; color:#444;}
     .download-btn {
-      display: inline-block;
-      padding: 12px 20px;
-      margin: 15px 10px;
-      background: #007acc;
-      color: #fff;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.2s;
+      display:inline-block; padding:12px 24px; margin:8px;
+      background:#007acc; color:#fff; border-radius:50px;
+      text-decoration:none; font-weight:600; transition:.2s;
     }
-    .download-btn:hover {
-      background: #005c99;
-    }
-    .note {
-      margin-top: 20px;
-      font-size: 0.9em;
-      color: #555;
-    }
+    .download-btn:hover {background:#005c99; transform:translateY(-2px);}
+    .note {margin-top:15px; font-size:.85em; color:#666;}
+    .versions a {display:block; margin:6px auto;}
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Download Electronics Flashcard App</h1>
-    <p>Get the latest version of the app below:</p>
+  <div class="card">
+    <h1>📱 Electronics Flashcard App</h1>
+    <p>Welcome! 🚀 This app is designed to help you review and master electronics concepts quickly and efficiently.</p>
 
-    <!-- Latest Release Download -->
-    <a href="https://github.com/RosarioEspadera/App-Download/releases/latest/download/app-release.apk" class="download-btn">⬇ Download Latest APK</a>
+    <h2>Latest Version (v1.0.2)</h2>
+    <p>Includes fixes and optimized load/storage size.</p>
+    <a href="https://github.com/RosarioEspadera/App-Download/releases/download/v1.0.2/app-release.apk" class="download-btn">
+      ⬇ Download v1.0.2
+    </a>
 
-    <p class="note">If the download doesn’t start, right-click and choose <b>Save link as...</b></p>
+    <p class="note">Tip: If the download doesn’t start automatically, right-click the link and choose <b>“Save link as…”</b></p>
+
+    <h2>Previous Versions</h2>
+    <div class="versions">
+      <a href="https://github.com/RosarioEspadera/App-Download/releases/download/v1.0.1/app-release.apk" class="download-btn">
+        ⬇ Version 1.0.1
+      </a>
+      <a href="https://github.com/RosarioEspadera/App-Download/releases/download/v1.0.0/app-release.apk" class="download-btn">
+        ⬇ Version 1.0.0
+      </a>
+    </div>
   </div>
 </body>
 </html>
